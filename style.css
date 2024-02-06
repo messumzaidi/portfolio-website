@@ -1,0 +1,59 @@
+/*==== Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*=== Globle CSS ===*/
+
+body
+{
+    font-family:"Montserrat";
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+    background: #081b29;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar .menu .nav-item{
+    display: inline-block;
+    position: relative;
+    margin-left: 36px;
+}
+.navbar .menu .nav-item .nav-link{
+    font-size: 18px;
+    color: #ededed;
+    font-weight: 500;
+    transition: 1s;
+}
+.navbar .menu .nav-item .nav-link:hover, .navbar .menu .nav-item .active{
+    color: yellowgreen;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+.logos{
+    font-size: 20px;
+    color: #ededed;
+    font-weight: 600;
+}
