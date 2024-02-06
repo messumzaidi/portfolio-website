@@ -114,3 +114,46 @@ section {
     color: black;
     font-weight: 600;
 }
+.home-sci{
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid greenyellow;
+    border-radius: 50%;
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-sci a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: greenyellow;
+    z-index: -1;
+    transition: 1s;
+}
+.home-sci a:hover:before{
+    width: 100%;
+}
+.image{
+    display: grid;
+    place-items: calc(center);
+}
+.image img{
+    width: min(40rem, 100%);
+    border-radius: 100%;
+}
